@@ -12,13 +12,12 @@ if (!isset($_SESSION['count']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
 
 print_r($_SESSION);
 
-echo 'You accessed this page '. $_SESSION['count'] . 'times <br>';
+echo '<h1 style="text-align:center;color:blue;background-color:cyan;"You accessed this page '. $_SESSION['count'] . 'times <br>';
 
 //session_destroy();
 
-
 $form = '
-<FORM action="form.php" method="post">
+<FORM action="transForm.php" method="post">
     <fieldset>
     <LABEL for="amount">Amount: </LABEL>
     <INPUT type="text" name="amount" id="lastname"><BR>
